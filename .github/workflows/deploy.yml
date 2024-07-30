@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+permissions:
+    contents:write
+
 env:
   BASE_URL: /${{ github.event.repository.name }}
 
@@ -50,3 +53,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: my_book_2/_build/html
