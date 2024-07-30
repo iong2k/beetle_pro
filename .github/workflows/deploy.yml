@@ -7,7 +7,7 @@ on:
       - master
 
 permissions:
-    contents:write
+    contents: write
 
 env:
   BASE_URL: /${{ github.event.repository.name }}
