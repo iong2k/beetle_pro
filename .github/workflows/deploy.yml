@@ -55,4 +55,4 @@ jobs:
         uses: actions/deploy-pages@v2
         with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: my_book_2/_build/html
+            publish_dir: sec_report/_build/html
